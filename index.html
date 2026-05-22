@@ -1,1 +1,1004 @@
-<html><body><h1>Vaishnav Kadhao</h1><p>Business Development Executive | B2B Lead Generation | Digital Marketing | Marketing Automation</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vaishnav Kadhao | Business Development & Digital Growth Portfolio</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Vaishnav Kadhao — Business Development, B2B Lead Generation, Digital Marketing, Marketing Automation, GTM Planning, and AI-assisted business workflows."
+  />
+
+  <style>
+    :root {
+      --bg: #060a0f;
+      --bg-soft: #0c121a;
+      --card: rgba(15, 23, 32, 0.86);
+      --card-2: rgba(21, 31, 42, 0.86);
+      --text: #f3f7f5;
+      --muted: #9aa7a1;
+      --dim: #68746e;
+      --line: rgba(255, 255, 255, 0.1);
+      --line-strong: rgba(255, 255, 255, 0.18);
+      --green: #30c770;
+      --green-soft: #9af0b5;
+      --blue: #66a6ff;
+      --amber: #f7b267;
+      --red: #ff6b6b;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(48, 199, 112, 0.20), transparent 28%),
+        radial-gradient(circle at 85% 25%, rgba(102, 166, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 55% 90%, rgba(247, 178, 103, 0.10), transparent 32%),
+        linear-gradient(135deg, #05080c 0%, #071019 48%, #0d1520 100%);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--green), var(--blue), var(--amber));
+      z-index: 999;
+      box-shadow: 0 0 18px rgba(48, 199, 112, 0.7);
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      border-bottom: 1px solid var(--line);
+      background: rgba(6, 10, 15, 0.76);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      font-size: 1.15rem;
+    }
+
+    .brand span {
+      color: var(--green);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--green-soft);
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: grid;
+      grid-template-columns: 1.06fr 0.94fr;
+      gap: 54px;
+      align-items: center;
+      padding: 92px 22px 70px;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 12px;
+      align-items: center;
+      color: var(--green-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      margin-bottom: 22px;
+      font-weight: 800;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: var(--green-soft);
+    }
+
+    .hero h1 {
+      font-size: clamp(3.5rem, 8vw, 7.4rem);
+      line-height: 0.86;
+      letter-spacing: -0.08em;
+      margin-bottom: 26px;
+      font-weight: 950;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--green);
+    }
+
+    .hero-copy {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1.05rem;
+      max-width: 670px;
+      margin-bottom: 30px;
+    }
+
+    .hero-copy strong {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 13px 18px;
+      border-radius: 10px;
+      font-weight: 900;
+      transition: 0.25s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #06100a;
+      box-shadow: 0 0 36px rgba(48, 199, 112, 0.28);
+    }
+
+    .btn-secondary {
+      border-color: var(--line-strong);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      background: var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .stat {
+      padding: 20px;
+      background: rgba(12, 18, 26, 0.88);
+    }
+
+    .stat-value {
+      display: block;
+      color: var(--green-soft);
+      font-size: 2rem;
+      font-weight: 950;
+      letter-spacing: -0.06em;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      color: var(--dim);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.45;
+      font-weight: 800;
+    }
+
+    .terminal {
+      border: 1px solid var(--line-strong);
+      background: rgba(12, 18, 26, 0.72);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: perspective(900px) rotateY(-6deg) rotateX(3deg);
+      transition: 0.45s ease;
+    }
+
+    .terminal:hover {
+      transform: perspective(900px) rotateY(0) rotateX(0) translateY(-6px);
+    }
+
+    .terminal-top {
+      padding: 15px 17px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--dim);
+      font-size: 0.78rem;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.red { background: #ff5f56; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #27c93f; }
+
+    .terminal-title {
+      margin-left: auto;
+      color: var(--dim);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.72rem;
+    }
+
+    .terminal-body {
+      padding: 24px;
+      color: #b9c7bf;
+      line-height: 1.85;
+      font-size: 0.9rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      min-height: 340px;
+      white-space: pre-wrap;
+    }
+
+    .terminal-body .green-text {
+      color: var(--green-soft);
+    }
+
+    .terminal-body .blue-text {
+      color: var(--blue);
+    }
+
+    .section {
+      padding: 84px 0;
+    }
+
+    .section-label {
+      color: var(--green-soft);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2.2rem, 4.3vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.06em;
+      margin-bottom: 38px;
+      max-width: 880px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1px;
+      border: 1px solid var(--line);
+      background: var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .two {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .four {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      min-height: 100%;
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      background: var(--card-2);
+    }
+
+    .card h3 {
+      font-size: 1.18rem;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.72;
+      font-size: 0.96rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .job {
+      border: 1px solid var(--line);
+      background: rgba(12, 18, 26, 0.78);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 30px;
+    }
+
+    .date {
+      color: var(--dim);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.65;
+      font-weight: 900;
+    }
+
+    .job h3 {
+      font-size: 1.35rem;
+      margin-bottom: 7px;
+    }
+
+    .role {
+      color: var(--green-soft);
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+
+    .job ul {
+      color: var(--muted);
+      line-height: 1.72;
+      padding-left: 19px;
+    }
+
+    .job li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      border: 1px solid rgba(48, 199, 112, 0.28);
+      background: rgba(48, 199, 112, 0.09);
+      color: var(--green-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.67rem;
+      padding: 6px 9px;
+      border-radius: 7px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .project {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 14px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px 10px;
+      border-radius: 7px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .skill-title {
+      color: var(--amber);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 950;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 16px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-list span {
+      border: 1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
+      padding: 7px 10px;
+      border-radius: 7px;
+      font-size: 0.83rem;
+    }
+
+    .contact-box {
+      background:
+        radial-gradient(circle at top left, rgba(48, 199, 112, 0.16), transparent 32%),
+        rgba(12, 18, 26, 0.84);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 22px;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-links a {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: rgba(255, 255, 255, 0.03);
+      transition: 0.25s ease;
+      font-weight: 800;
+    }
+
+    .contact-links a:hover {
+      border-color: var(--green);
+      transform: translateX(4px);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 22px;
+      color: var(--dim);
+      font-size: 0.82rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 920px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 14px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 4px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 70px;
+      }
+
+      .terminal {
+        transform: none;
+      }
+
+      .stats,
+      .two,
+      .three,
+      .four {
+        grid-template-columns: 1fr;
+      }
+
+      .job {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero h1 {
+        font-size: 3.4rem;
+      }
+
+      .section {
+        padding: 62px 0;
+      }
+
+      .card,
+      .job,
+      .contact-box {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress" id="progress"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">Vaishnav<span>.</span>Kadhao</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div>
+      <div class="eyebrow reveal">Business Growth · Digital Marketing · Automation</div>
+
+      <h1 class="reveal">
+        Vaishnav
+        <span>Kadhao</span>
+      </h1>
+
+      <p class="hero-copy reveal">
+        I build growth systems across
+        <strong>B2B lead generation, consultative sales, digital marketing, GTM research, CRM workflows, and AI-assisted business operations</strong>.
+        My focus is converting research, outreach, and process design into measurable pipeline and scalable execution.
+      </p>
+
+      <div class="actions reveal">
+        <a class="btn btn-primary" href="mailto:vaishnav.kadhao1@gmail.com">Get in Touch</a>
+        <a class="btn btn-secondary" href="https://github.com/JustVKisgood" target="_blank">GitHub ↗</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/vaishnav-kadhao" target="_blank">LinkedIn ↗</a>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Years Combined Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1,500+</span>
+          <span class="stat-label">Qualified Leads Supported</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">3–6</span>
+          <span class="stat-label">Campaigns Managed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">25%</span>
+          <span class="stat-label">Revenue Growth Impact</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-top">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">growth_system.js</span>
+      </div>
+
+      <div class="terminal-body">
+<span class="blue-text">const</span> growthSystem = {
+  market: <span class="green-text">"B2B + B2C"</span>,
+  focus: <span class="green-text">"pipeline + process + performance"</span>,
+  tools: [<span class="green-text">"CRM"</span>, <span class="green-text">"Automation"</span>, <span class="green-text">"AI Research"</span>],
+  projects: [<span class="green-text">"Aapla Kisan"</span>, <span class="green-text">"Lead Gen OS"</span>],
+};
+
+deploy(growthSystem);
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-label reveal">01 / About</div>
+        <h2 class="section-title reveal">Growth thinking with operational depth.</h2>
+
+        <div class="grid two reveal">
+          <div class="card">
+            <p>
+              I am a Business Development and Digital Marketing professional based in Pune, India,
+              with experience across B2B/B2C lead generation, global SaaS prospecting, consultative sales,
+              demand generation, campaign coordination, market research, and automation workflow planning.
+            </p>
+            <br />
+            <p>
+              My work connects front-end growth actions such as outreach, ICP mapping, appointment generation,
+              and stakeholder communication with execution systems such as CRM hygiene, process mapping, SOP planning,
+              dashboards, and business validation.
+            </p>
+          </div>
+
+          <div class="grid two">
+            <div class="stat">
+              <span class="stat-value">3+</span>
+              <span class="stat-label">Weekly Discovery Appointments</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">200+</span>
+              <span class="stat-label">Customers Managed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">12+</span>
+              <span class="stat-label">Growth / CRM / AI Tools</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Portfolio Tracks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-label reveal">02 / Experience</div>
+        <h2 class="section-title reveal">Where I have built and executed.</h2>
+
+        <div class="timeline">
+          <div class="job reveal">
+            <div class="date">May 2024 — Jun 2025<br />Pune / USA Market</div>
+            <div>
+              <h3>Xin Global Services Pvt. Ltd.</h3>
+              <div class="role">Inside Sales Executive · Lead Generation · Demand Generation</div>
+              <ul>
+                <li>Worked on USA-focused B2B and B2C lead generation campaigns across SaaS, technology, digital marketing, media, enterprise services, and consumer-focused requirements.</li>
+                <li>Supported global client acquisition through account research, decision-maker mapping, ICP-fit prospecting, lead qualification, and outreach-ready database preparation.</li>
+                <li>Used LinkedIn Sales Navigator, Apollo, LinkedIn outreach, email outreach, database research, market mapping, and Zoho CRM to support pipeline visibility.</li>
+                <li>Contributed to 1,500+ qualified leads, managed 3–6 active campaigns simultaneously, and secured approximately 3 discovery appointments weekly.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job reveal">
+            <div class="date">Jun 2025 — Apr 2026<br />Portfolio / Consulting</div>
+            <div>
+              <h3>Aapla Kisan</h3>
+              <div class="role">Business Consultant · Market Research · Digital GTM · Automation Workflow Planning</div>
+              <ul>
+                <li>Created a business blueprint for a fresh and quick commerce concept combining B2C urban demand with a B2B/D2H-style backend supply structure.</li>
+                <li>Structured the business model, operations flow, customer journey, producer onboarding, agent workflow, digital GTM approach, automation logic, and backend supply design.</li>
+                <li>Conducted stakeholder and market research around pricing sensitivity, trust barriers, supply readiness, packaging gaps, payment-cycle expectations, and digital adoption.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job reveal">
+            <div class="date">Aug 2016 — Aug 2022<br />Founder Journey</div>
+            <div>
+              <h3>Wild Gems Expeditions</h3>
+              <div class="role">Founder & Planner · Brand Building · Operations</div>
+              <ul>
+                <li>Built and branded a niche wildlife travel and expedition service, handling customer acquisition, service positioning, vendor coordination, pricing, budgeting, itinerary planning, and on-ground execution.</li>
+                <li>Acquired and managed 200+ customers through referrals, social presence, direct communication, professional connections, and trust-led relationship building.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="job reveal">
+            <div class="date">2018 — 2023<br />Research + Operations</div>
+            <div>
+              <h3>Education Operations & Conservation Projects</h3>
+              <div class="role">Student Centre Officer · Conservation Officer / Project Manager</div>
+              <ul>
+                <li>Managed admissions coordination, documentation workflows, stakeholder communication, case tracking, and international education operations.</li>
+                <li>Supported conservation project work connected with UN and IUCN initiatives, including field research, documentation, stakeholder communication, reporting, and project coordination.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-label reveal">03 / Projects</div>
+        <h2 class="section-title reveal">Proof-of-work case studies.</h2>
+
+        <div class="grid three reveal">
+          <a class="card project" href="https://github.com/JustVKisgood/aapla-kisan-growth-system" target="_blank">
+            <span class="tag">Product Strategy</span>
+            <h3>Aapla Kisan Growth System</h3>
+            <p>
+              A fresh produce platform case study covering business model, SOPs, UI/UX, MVP planning,
+              stakeholder journeys, procurement strategy, pricing model, and pilot execution.
+            </p>
+            <div class="chips">
+              <span class="chip">Business Analysis</span>
+              <span class="chip">SOPs</span>
+              <span class="chip">UI/UX</span>
+              <span class="chip">GTM</span>
+            </div>
+          </a>
+
+          <div class="card project">
+            <span class="tag">Growth Systems</span>
+            <h3>B2B Lead Generation Operating System</h3>
+            <p>
+              A structured framework for ICP research, account mapping, LinkedIn outreach, email sequencing,
+              CRM hygiene, appointment generation, and campaign visibility.
+            </p>
+            <div class="chips">
+              <span class="chip">Apollo</span>
+              <span class="chip">Sales Navigator</span>
+              <span class="chip">Zoho CRM</span>
+              <span class="chip">ABM</span>
+            </div>
+          </div>
+
+          <div class="card project">
+            <span class="tag">Automation</span>
+            <h3>AI-Assisted Marketing Workflow Blueprint</h3>
+            <p>
+              A practical planning framework for research automation, lead routing, FAQ handling,
+              follow-up tracking, chatbot flow planning, and campaign coordination.
+            </p>
+            <div class="chips">
+              <span class="chip">ChatGPT</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">Zapier</span>
+              <span class="chip">n8n</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-label reveal">04 / Skills</div>
+        <h2 class="section-title reveal">The toolkit.</h2>
+
+        <div class="grid four reveal">
+          <div class="card">
+            <div class="skill-title">Business Development</div>
+            <div class="skill-list">
+              <span>Inside Sales</span>
+              <span>Consultative Sales</span>
+              <span>Lead Qualification</span>
+              <span>Appointment Generation</span>
+              <span>Stakeholder Communication</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-title">Lead Generation</div>
+            <div class="skill-list">
+              <span>B2B Lead Gen</span>
+              <span>B2C Outreach</span>
+              <span>USA Market</span>
+              <span>Sales Navigator</span>
+              <span>Apollo</span>
+              <span>Email Outreach</span>
+              <span>ICP Mapping</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-title">Demand Generation</div>
+            <div class="skill-list">
+              <span>Digital Marketing</span>
+              <span>Marketing Automation</span>
+              <span>Programmatic Marketing</span>
+              <span>Email Marketing</span>
+              <span>ABM</span>
+              <span>MQL</span>
+              <span>SQL</span>
+              <span>BANT/HQL</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="skill-title">AI + Operations</div>
+            <div class="skill-list">
+              <span>AI-Assisted Research</span>
+              <span>Prompt Engineering</span>
+              <span>CRM Workflow</span>
+              <span>Process Mapping</span>
+              <span>Chatbot Planning</span>
+              <span>GTM Workflow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-label reveal">05 / Education & Certifications</div>
+        <h2 class="section-title reveal">Learning with business application.</h2>
+
+        <div class="grid two reveal">
+          <div class="card">
+            <h3>M.Sc. Environmental Science</h3>
+            <p>Environmental systems, research, documentation, field insights, stakeholder understanding, and sustainability-led thinking.</p>
+          </div>
+
+          <div class="card">
+            <h3>B.Sc. Environmental Science</h3>
+            <p>Foundation in research, conservation, analysis, field systems, and environmental thinking.</p>
+          </div>
+
+          <div class="card">
+            <h3>Digital Marketing & Programmatic Marketing</h3>
+            <p>LIPS India — Advanced Digital Marketing and Programmatic Marketing.</p>
+          </div>
+
+          <div class="card">
+            <h3>AI, ESG & Sales Learning</h3>
+            <p>Google Ads in progress, CFI ESG, Salesforce Agentforce / AI Agent learning module, and continuous AI workflow learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-label reveal">06 / Contact</div>
+        <h2 class="section-title reveal">Let’s build growth systems.</h2>
+
+        <div class="grid two reveal">
+          <div class="contact-box">
+            <p>
+              Open to roles and consulting opportunities across digital marketing, B2B lead generation,
+              business development, inside sales, marketing automation, CRM workflows, and product-led business operations.
+            </p>
+
+            <a class="btn btn-primary" href="mailto:vaishnav.kadhao1@gmail.com">Email Me</a>
+          </div>
+
+          <div class="card">
+            <div class="contact-links">
+              <a href="mailto:vaishnav.kadhao1@gmail.com"><span>Email</span><span>↗</span></a>
+              <a href="https://github.com/JustVKisgood" target="_blank"><span>GitHub</span><span>↗</span></a>
+              <a href="https://www.linkedin.com/in/vaishnav-kadhao" target="_blank"><span>LinkedIn</span><span>↗</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Vaishnav Kadhao</span>
+      <span>Built for GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    const progress = document.getElementById("progress");
+
+    window.addEventListener("scroll", () => {
+      const maxHeight = document.body.scrollHeight - window.innerHeight;
+      const percent = (window.scrollY / maxHeight) * 100;
+      progress.style.width = percent + "%";
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((element) => {
+      observer.observe(element);
+    });
+  </script>
+</body>
+</html>
