@@ -331,6 +331,7 @@
     .section {
       padding: 84px 0;
       position: relative;
+      scroll-margin-top: 96px;
     }
 
     .section + .section::before {
@@ -437,7 +438,7 @@
 
     .featured-project {
       display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
+      grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr);
       gap: 0;
       margin-bottom: 22px;
       overflow: hidden;
@@ -455,8 +456,13 @@
     }
 
     .featured-media {
+      display: block;
+      min-width: 0;
       min-height: 330px;
-      background: #09111a;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.16), transparent 30%),
+        #09111a;
     }
 
     .featured-media img {
@@ -465,6 +471,7 @@
       height: 100%;
       aspect-ratio: 16 / 10;
       object-fit: cover;
+      color: transparent;
     }
 
     .featured-content {
@@ -529,12 +536,14 @@
     }
 
     .project-img {
+      display: block;
       width: 100%;
       aspect-ratio: 16 / 10;
       object-fit: cover;
       border: 1px solid var(--border-subtle);
       border-radius: 12px;
       background: #101923;
+      color: transparent;
     }
 
     .chips {
@@ -843,7 +852,7 @@
 
         <div class="featured-project">
           <a class="featured-media" href="https://ai-lead-scoring-conversion-intelligence-6hbdet9neqq3q84jtayql6.streamlit.app" target="_blank" rel="noreferrer">
-            <img src="https://github.com/user-attachments/assets/bb0e8265-74ca-4546-bda5-be18233b1b86" alt="AI-Powered Lead Scoring dashboard preview">
+            <img src="assets/lead-scoring-preview.svg" alt="AI-Powered Lead Scoring dashboard preview">
           </a>
           <div class="featured-content">
             <span class="tag hot">🚀 Featured · Live ML Dashboard</span>
@@ -885,7 +894,7 @@
           </a>
 
           <a class="card project" href="https://gtm-ga4-measurement-dashboard-system-sqywsegpmhzcxzz23wcwwr.streamlit.app/" target="_blank" rel="noreferrer">
-            <img class="project-img" src="https://github.com/user-attachments/assets/2ca27b02-b775-429e-b6d8-3d641e6d741d" alt="GTM and GA4 Measurement Dashboard preview">
+            <img class="project-img" src="assets/gtm-ga4-preview.svg" alt="GTM and GA4 Measurement Dashboard preview">
             <span class="tag live">📡 Live Streamlit App</span>
             <h3>GTM + GA4 Measurement Dashboard</h3>
             <p>UTM governance, GA4 event taxonomy, GTM trigger mapping, and conversion-tracking QA — validates measurement before budget goes live.</p>
@@ -899,7 +908,7 @@
           </a>
 
           <a class="card project" href="https://ai-performance-marketing-automation-lab-zzvxdwladc8tnrfaytvtxy.streamlit.app/" target="_blank" rel="noreferrer">
-            <img class="project-img" src="https://github.com/user-attachments/assets/5158815b-df79-4454-9604-8559e097627c" alt="AI Campaign Health Intelligence dashboard preview">
+            <img class="project-img" src="https://raw.githubusercontent.com/vaishnavkadhao/ai-performance-marketing-automation-lab/main/assets/project1-pro-dashboard-hero.png" alt="AI Campaign Health Intelligence dashboard preview">
             <span class="tag live">📊 Live Streamlit App</span>
             <h3>AI Campaign Health Intelligence</h3>
             <p>Multi-source campaign analytics with health scoring, budget pacing, anomaly detection, and optimization recommendations.</p>
