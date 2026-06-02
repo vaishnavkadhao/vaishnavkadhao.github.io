@@ -375,7 +375,7 @@
     }
 
     .projects-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .card {
@@ -438,7 +438,7 @@
 
     .featured-project {
       display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(380px, 0.92fr);
+      grid-template-columns: minmax(0, 1fr) minmax(500px, 0.86fr);
       gap: 0;
       margin-bottom: 22px;
       overflow: hidden;
@@ -456,10 +456,12 @@
     }
 
     .featured-media {
-      display: block;
+      display: grid;
+      place-items: center;
       min-width: 0;
       min-height: 330px;
       overflow: hidden;
+      padding: 18px;
       background:
         radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.16), transparent 30%),
         #09111a;
@@ -470,7 +472,8 @@
       width: 100%;
       height: 100%;
       aspect-ratio: 16 / 10;
-      object-fit: cover;
+      object-fit: contain;
+      border-radius: 12px;
       color: transparent;
     }
 
@@ -523,7 +526,7 @@
     .metric strong {
       display: block;
       color: var(--accent-warm);
-      font-size: 1rem;
+      font-size: 0.95rem;
       line-height: 1.35;
     }
 
@@ -860,7 +863,7 @@
             <p>A machine-learning dashboard that scores 9,240 real leads as Hot/Warm/Cold using logistic regression, explains what drives conversion, and recommends next actions. Built on a public Kaggle dataset with leakage-free features.</p>
             <div class="metric-grid">
               <div class="metric"><strong>9,240 Leads Scored</strong></div>
-              <div class="metric"><strong>0.878 ROC-AUC</strong></div>
+              <div class="metric"><strong>0.878 ROC&#8209;AUC</strong></div>
               <div class="metric"><strong>~6x Hot vs Cold Separation</strong></div>
             </div>
             <div class="project-actions">
